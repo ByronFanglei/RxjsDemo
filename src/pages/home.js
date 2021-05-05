@@ -6,7 +6,7 @@ export default class Home extends Component {
 
   render() {
     return(
-      <div>
+      <>
         <Button type="primary" onClick={() => this.props.history.push('/origindebounce')}>原生防抖</Button>
         <Button type="primary" onClick={() => this.props.history.push('/originthrottle')}>原生节流</Button>
 
@@ -21,7 +21,12 @@ export default class Home extends Component {
         <Button type="primary" onClick={() => this.props.history.push('/operators')}>常用Operators</Button>
         <Button type="primary" onClick={() => this.props.history.push('/rxjshooksuseobservable')}>rxjshooksUseObservable</Button>
         <Button type="primary" onClick={() => this.props.history.push('/rxjshooksuseeventcallback')}>rxjshooksUseEventCallback</Button>
-      </div>
+        
+        <h2>30天RxJS</h2>
+
+        <Button type="primary" onClick={() => this.props.history.push('/day3')}>Day3(简易计数器)</Button>
+
+      </>
     )
   }
 }
